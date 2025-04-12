@@ -12,7 +12,11 @@
   <strong>An AI-powered financial document analysis platform for intelligent transaction extraction and visualization.</strong>
 </p>
 
- 
+ ## 👨‍💻 Created By
+
+- [Aryaman Ahuja](https://github.com/Aryaman653)  
+- [Aryan Dutta](https://github.com/aRyanDuTta425)
+
 
 ## ✨ Features
 
@@ -173,6 +177,8 @@ The interactive dashboard includes:
 - Expense category distribution (doughnut chart)
 - Monthly income/expense trends (line chart)
 - Transaction history with filtering and sorting
+
+
 
 ## 🤝 Contributing
 
