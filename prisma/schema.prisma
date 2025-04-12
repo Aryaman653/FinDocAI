@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum TransactionType {
+  INCOME
+  EXPENSE
+}
+
+enum DocumentStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  ERROR
+}
+
+model User {
+  id            String        @id @default(cuid())
+  email         String        @unique
+  name          String?
+  documents     Document[]
+  transactions  Transaction[]
+  categories    Category[]
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model Document {
+  id            String          @id @default(cuid())
+  fileName      String
+  fileType      String
+  fileSize      Int
+  status        DocumentStatus  @default(PENDING)
+  user          User            @relation(fields: [userId], references: [id])
+  userId        String
+  transactions  Transaction[]
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  @@index([userId])
+}
+
+enum DocumentType {
+  INVOICE
+  BANK_STATEMENT
+  TAX_RETURN
+  RECEIPT
+  UNKNOWN
+}
+
+model Transaction {
+  id          String          @id @default(cuid())
+  date        DateTime
+  description String
+  amount      Float
+  type        String
+  category    Category        @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  document    Document?       @relation(fields: [documentId], references: [id])
+  documentId  String?
+  user        User           @relation(fields: [userId], references: [id])
+  userId      String
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([userId])
+  @@index([categoryId])
+  @@index([documentId])
+}
+
+model Category {
+  id            String        @id @default(cuid())
+  name          String
+  type          String       @default("EXPENSE")
+  user          User          @relation(fields: [userId], references: [id])
+  userId        String
+  transactions  Transaction[]
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@unique([name, userId])
+  @@index([userId])
+} 

@@ -1,0 +1,47 @@
+{
+  "name": "financial-doc-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@prisma/client": "^5.10.0",
+    "@types/formidable": "^3.4.5",
+    "@types/tesseract.js": "^2.0.0",
+    "chart.js": "^4.4.8",
+    "date-fns": "^4.1.0",
+    "formidable": "^3.5.2",
+    "next": "^14.1.0",
+    "opencv.js": "^1.2.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.1.91",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-simple-typewriter": "^5.0.1",
+    "recharts": "^2.12.0",
+    "tailwindcss": "^3.4.1",
+    "tesseract.js": "^6.0.1",
+    "typescript": "^5.3.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/pdfjs-dist": "^2.10.378",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
+    "postcss": "^8.4.35",
+    "prisma": "^5.10.0"
+  }
+}
