@@ -34,6 +34,24 @@
 
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 
+
+📸 Screenshots 
+🏠 Home Page
+![image](https://github.com/user-attachments/assets/7187990e-fbdc-4a47-8f26-6689c28129b0)
+
+📄 Upload Document Page
+![image](https://github.com/user-attachments/assets/d67d9382-ccff-47e2-a9d5-5f06f30c76ec)
+![image](https://github.com/user-attachments/assets/c66ae281-e3c5-4a6f-8d7c-ed18df9b5630)
+
+📊 Financial Insights Dashboard
+![image](https://github.com/user-attachments/assets/2e80469e-0e8c-498e-a5ee-7a575c179b08)
+![image](https://github.com/user-attachments/assets/ba891db0-ce01-4da4-94bd-1b115d2e8826)
+
+## 🎥 Demo
+
+[![Watch the demo](https://img.youtube.com/vi/K9qRYe4AsYE/0.jpg)](https://youtu.be/K9qRYe4AsYE)
+
+
 ## 🚀 Getting Started
 
 ### Prerequisites
