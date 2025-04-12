@@ -51,7 +51,7 @@
 ![image](https://github.com/user-attachments/assets/2e80469e-0e8c-498e-a5ee-7a575c179b08)
 ![image](https://github.com/user-attachments/assets/ba891db0-ce01-4da4-94bd-1b115d2e8826)
 
-## 🎥 Demo
+## 🎥 YT Demo(Just press on it):
 
 [![Watch the demo](https://img.youtube.com/vi/K9qRYe4AsYE/0.jpg)](https://youtu.be/K9qRYe4AsYE)
 
