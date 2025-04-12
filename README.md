@@ -1,4 +1,4 @@
-# 📊 Financial Document Intelligence
+# 📊 Financial Document Analysis (FinDocAI)
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -12,7 +12,7 @@
   <strong>An AI-powered financial document analysis platform for intelligent transaction extraction and visualization.</strong>
 </p>
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Financial+Dashboard+Preview)
+ 
 
 ## ✨ Features
 
